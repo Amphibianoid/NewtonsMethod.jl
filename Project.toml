@@ -3,6 +3,10 @@ uuid = "99fa3600-ec54-11e8-3ca1-dd0c533c4162"
 authors = ["GabrielBrown <43052327+Amphibianoid@users.noreply.github.com>"]
 version = "0.1.0"
 
+[deps]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Expectations = "2fe49d83-0758-5602-8f54-1f90ad0d522b"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
