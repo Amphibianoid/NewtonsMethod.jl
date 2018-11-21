@@ -1,17 +1,11 @@
 using NewtonsMethod
 using Test
-using LinearAlgebra
-
-#@testset "NewtonsMethod.jl" begin
-    # Write your own tests here.
-#@test foo() == 0.11388071406436832
-#@test foo(1, 1.5) == 0.2731856314283442
-#@test_broken foo(1, 0) # tells us this is broken
+#using LinearAlgebra
 
 # Testing first function
 
 g(x)=(x-1)^2
-g′(x)=2(x-1)
+g′(x)=2*(x-1)
 @test newtonroot(g,g′;x₀=2) ≈ 1.0 atol=1E-4
 @test newtonroot(g;x₀=2)  ≈ 1.0 atol=1E-4
 
@@ -25,7 +19,7 @@ h′(x)=exp(x)
 #Testing function without convergence
 
 j(x)=x^2+2
-j′(x)=2x
+j′(x)=2*x
 
 @test newtonroot(j,j′;x₀=1) == nothing
 @test newtonroot(j;x₀=1) == nothing
