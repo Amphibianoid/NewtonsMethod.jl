@@ -2,8 +2,6 @@ module NewtonsMethod
 
     using Expectations, Distributions, ForwardDiff, LinearAlgebra
 
-export foo
-
     function newtonroot(f,f′; x₀,tol=1E-7,maxiter=1000)
         x_old=x₀
         iter=0
