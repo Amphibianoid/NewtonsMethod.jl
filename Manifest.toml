@@ -69,7 +69,7 @@ version = "0.16.4"
 
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "LinearAlgebra", "Random", "SpecialFunctions", "Statistics", "Test"]
-path = "C:\\Users\\Gabriel Brown\\.julia\\dev\\Expectations"
+git-tree-sha1 = "2b43117ce510ebc0e49bf31d71969a807148ea49"
 uuid = "2fe49d83-0758-5602-8f54-1f90ad0d522b"
 version = "1.0.2+"
 
