@@ -2,6 +2,8 @@ using NewtonsMethod
 using Test
 using LinearAlgebra
 
+@testset "NewtonTests" begin
+
 # Testing first function
 
 g(x)=(x-1)^2
@@ -40,3 +42,9 @@ root2=newtonroot(g,g′;x₀=3)
 #Testing BigFloat
 
 @test newtonroot(h,h′;x₀=BigFloat(3),tol=BigFloat(1E-7),maxiter=BigFloat(1000)) ≈ 0.0 atol=1E-4
+
+l(x)=log(x)
+
+@test_broken newtonroot(l;x₀=3) ≈ 1.0 atol=1E-4
+
+end
