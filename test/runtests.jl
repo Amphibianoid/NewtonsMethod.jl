@@ -2,7 +2,7 @@ using NewtonsMethod
 using Test
 using LinearAlgebra
 
-@testset "NewtonsMethod.jl" begin
+#@testset "NewtonsMethod.jl" begin
     # Write your own tests here.
 #@test foo() == 0.11388071406436832
 #@test foo(1, 1.5) == 0.2731856314283442
