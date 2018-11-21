@@ -47,4 +47,3 @@ root2=newtonroot(g,g′;x₀=3)
 
 @test newtonroot(h,h′;x₀=BigFloat(3),tol=BigFloat(1E-7),maxiter=BigFloat(1000)) ≈ 0.0 atol=1E-4
 
-end
